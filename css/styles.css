@@ -1,0 +1,208 @@
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212121;
+  background-color: #FFFFFF;
+  
+}
+li {
+  list-style-type: none;
+}
+/* Оформлення логотипу */
+.logo {
+text-decoration: none;
+}
+/* Перша частина лого */
+.logo-web {
+font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196F3;
+}
+/* Друга частина лого */
+.logo-studio {
+font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+}
+/* Частина лого у футері (біла)*/
+.logo-studio-collor {
+font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+/* Навігація сайту */
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+}
+.nav-link:hover, 
+.nav-link:focus,
+.studio:active {
+  color: #2196F3;
+}
+
+.nav .studio.current {
+  color: #2196F3;
+}
+
+/* Контакти сайту */
+.contacts a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #757575;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+color: #2196F3;
+}
+
+
+
+/* Стилі на основний заголовок  */
+.hero {
+  background: #2F303A;
+}
+
+.heero-title {
+  font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Стилі на кнопку під основним банером */
+.button {
+  font-family: inherit;
+  background: #2196F3;
+  color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+}
+
+
+.button:hover,
+.button:focus {
+  background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* Скриваємо заголовок h2 */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.special-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.special-content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team {
+  background: #F5F4FA
+}
+
+.team-name {
+font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-post {
+font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.footer {
+  background: #2F303A;
+}
+
+.contacts-foot {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff99;
+
+}
+
+.contacts-foot:hover,
+.contacts-foot:focus {
+  color: #2196F3;
+}
+.address {
+font-family: 'Roboto';
+font-style: normal;
+text-decoration: none;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
