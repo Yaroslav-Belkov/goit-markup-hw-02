@@ -3,8 +3,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
   color: #212121;
+  letter-spacing: 0.03em;
   background-color: #FFFFFF;
   
 }
@@ -18,29 +18,25 @@ text-decoration: none;
 /* Перша частина лого */
 .logo-web {
 font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   color: #2196F3;
 }
 /* Друга частина лого */
 .logo-studio {
 font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   color: #000000;
 }
 /* Частина лого у футері (біла)*/
 .logo-studio-collor {
 font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: #FFFFFF;
 }
 
@@ -50,26 +46,25 @@ font-family: 'Raleway';
   list-style: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 
 }
 .nav-link:hover, 
-.nav-link:focus,
-.studio:active {
+.nav-link:focus {
   color: #2196F3;
 }
 
-.nav .studio.current {
+.nav .studio.current,
+.nav .portfolio.current {
   color: #2196F3;
 }
 
 /* Контакти сайту */
 .contacts a {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     text-decoration: none;
     color: #757575;
 }
@@ -89,7 +84,7 @@ color: #2196F3;
 .heero-title {
   font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -98,17 +93,17 @@ color: #2196F3;
 }
 /* Стилі на кнопку під основним банером */
 .button {
-  font-family: inherit;
-  background: #2196F3;
-  color: #FFFFFF;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
+    background: #2196F3;
+      color: #FFFFFF;
 }
 
 
@@ -117,7 +112,12 @@ color: #2196F3;
   background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* Скриваємо заголовок h2 */
+
+.button,
+.button-filters {
+  cursor: pointer;
+}
+/* Скриваємо заголовок h2 та h1 у портфоліо */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -134,25 +134,22 @@ color: #2196F3;
 .special-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
 .special-content {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: #757575;
 }
 
 .title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team {
@@ -162,17 +159,14 @@ color: #2196F3;
 .team-name {
 font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-post {
-font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -181,13 +175,10 @@ font-weight: 400;
 }
 
 .contacts-foot {
-    font-family: 'Roboto';
-    font-style: normal;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: #ffffff99;
 
 }
@@ -197,12 +188,39 @@ font-weight: 400;
   color: #2196F3;
 }
 .address {
-font-family: 'Roboto';
-font-style: normal;
 text-decoration: none;
-font-weight: 400;
 font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
+line-height: 1.71;
 color: #FFFFFF;
 }
+
+/* Portfolio */
+
+.button-filters {
+    font-family: inherit;
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: #F5F4FA ;
+}
+
+.button-filters:hover,
+.button-filters:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+.portfolio-title {
+  font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-content {
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
+
+}
+
