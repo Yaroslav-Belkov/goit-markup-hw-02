@@ -1,7 +1,25 @@
+:root {
+  --brand-color-left: #2196F3;
+  --brand-color-right: #000000;
+  --brand-color-fut: #FFFFFF;
+  --hover-color: #2196F3;
+  --nav-color: #212121;
+  --contacts-color: #757575;
+  --hero-bg-color: #2F303A;
+  --light-collor: #FFFFFF;
+  --button-color: #2196F3;
+  --button-hover-color: #188CE8;
+  --spec-content-color: #757575;
+  --team-content-color: #F5F4FA;
+  --footer-color: #2F303A;
+  --cont-foot-color: #ffffff99;
+  --button-filters-color: #F5F4FA;
+  --portfolio-content-color: #757575;
+}
+
+
 body {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   color: #212121;
   letter-spacing: 0.03em;
@@ -21,7 +39,7 @@ font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196F3;
+  color: var(--brand-color-left);
 }
 /* Друга частина лого */
 .logo-studio {
@@ -29,7 +47,7 @@ font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+  color: var(--brand-color-right);
 }
 /* Частина лого у футері (біла)*/
 .logo-studio-collor {
@@ -37,7 +55,7 @@ font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #FFFFFF;
+  color: var(--brand-color-fut);
 }
 
 /* Навігація сайту */
@@ -45,40 +63,39 @@ font-family: 'Raleway';
   text-decoration: none;
   list-style: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--nav-color);
 
 }
 .nav-link:hover, 
 .nav-link:focus {
-  color: #2196F3;
+  color: var(--hover-color);
 }
 
 .nav .studio.current,
 .nav .portfolio.current {
-  color: #2196F3;
+  color: var(--hover-color);
 }
 
 /* Контакти сайту */
 .contacts a {
-    font-size: 14px;
+    font-weight: 500;
     line-height: 1.71;
     text-decoration: none;
-    color: #757575;
+    color: var(--contacts-color);
 }
 
 .contacts a:hover,
 .contacts a:focus {
-color: #2196F3;
+color: var(--hover-color);
 }
 
 
 
 /* Стилі на основний заголовок  */
 .hero {
-  background: #2F303A;
+  background: var(--hero-bg-color);
 }
 
 .heero-title {
@@ -88,7 +105,7 @@ color: #2196F3;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--light-collor);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* Стилі на кнопку під основним банером */
@@ -102,14 +119,14 @@ color: #2196F3;
     text-align: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    background: #2196F3;
-      color: #FFFFFF;
+    background: var(--button-color);
+      color: var(--light-collor);
 }
 
 
 .button:hover,
 .button:focus {
-  background: #188CE8;
+  background: var(--button-hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -133,16 +150,13 @@ color: #2196F3;
 
 .special-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 .special-content {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--spec-content-color);
 }
 
 .title {
@@ -153,7 +167,7 @@ color: #2196F3;
 }
 
 .team {
-  background: #F5F4FA
+  background: var(--team-content-color);
 }
 
 .team-name {
@@ -167,31 +181,35 @@ font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #757575;
+  color: var(--spec-content-color);
 }
 
 .footer {
-  background: #2F303A;
+  background: var(--footer-color);
 }
 
 .contacts-foot {
     text-decoration: none;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    color: #ffffff99;
+    color: var(--cont-foot-color);
 
 }
 
 .contacts-foot:hover,
 .contacts-foot:focus {
-  color: #2196F3;
+  color: var(--hover-color);
 }
 .address {
 text-decoration: none;
-font-size: 14px;
 line-height: 1.71;
-color: #FFFFFF;
+color: var(--light-collor);
+}
+
+.address-item {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--light-collor)
 }
 
 /* Portfolio */
@@ -201,13 +219,14 @@ color: #FFFFFF;
   font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    background-color: #F5F4FA ;
+    background-color: var(--button-filters-color);
+    color: var(--nav-color);
 }
 
 .button-filters:hover,
 .button-filters:focus {
-  background-color: #2196F3;
-  color: #FFFFFF;
+  background-color: var(--button-hover-color);
+  color: var(--light-collor);
 }
 
 .portfolio-title {
@@ -220,7 +239,17 @@ color: #FFFFFF;
 .portfolio-content {
     font-size: 16px;
     line-height: 1.87;
-    color: #757575;
+    color: var(--portfolio-content-color)
 
 }
+.adres {
+  font-style: normal;
+}
+.address-position {
+  text-decoration: none;
+}
 
+.address:hover,
+.address:focus{
+  color: var(--button-hover-color);
+}
