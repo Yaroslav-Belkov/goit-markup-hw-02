@@ -10,7 +10,7 @@
   --button-color: #2196F3;
   --button-hover-color: #188CE8;
   --spec-content-color: #757575;
-  --team-content-color: #F5F4FA;
+  --team-content-color: #F5F4FA; 
   --footer-color: #2F303A;
   --cont-foot-color: #ffffff99;
   --button-filters-color: #F5F4FA;
@@ -107,6 +107,7 @@ color: var(--hover-color);
     text-transform: uppercase;
     color: var(--light-collor);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 /* Стилі на кнопку під основним банером */
 .button {
