@@ -81,7 +81,7 @@ font-family: 'Raleway';
 /* Контакти сайту */
 .contacts a {
     font-weight: 500;
-    line-height: 1.71;
+    line-height: 1.14;
     text-decoration: none;
     color: var(--contacts-color);
 }
@@ -153,6 +153,7 @@ color: var(--hover-color);
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .special-content {
@@ -220,6 +221,7 @@ color: var(--light-collor);
   font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+    letter-spacing: 0.03em;
     background-color: var(--button-filters-color);
     color: var(--nav-color);
 }
